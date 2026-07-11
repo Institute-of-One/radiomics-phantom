@@ -53,7 +53,19 @@ include = ["rphantom*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q --strict-markers"
-filterwarnings = ["error::DeprecationWarning"]
+# Treat deprecations as errors to catch our own early, but never fail on
+# deprecations raised inside the scientific stack, whose internals and release
+# cadence we do not control (e.g. scikit-image's marching_cubes trips a NumPy
+# 2.5 shape-setting deprecation).
+filterwarnings = [
+    "error::DeprecationWarning",
+    "ignore::DeprecationWarning:skimage",
+    "ignore::DeprecationWarning:numpy",
+    "ignore::DeprecationWarning:scipy",
+    "ignore::DeprecationWarning:pandas",
+    "ignore::DeprecationWarning:pingouin",
+    "ignore::DeprecationWarning:matplotlib",
+]
 
 [tool.ruff]
 line-length = 100
@@ -76,16 +88,18 @@ ignore = ["D203", "D213", "D401", "D404"]
 "scripts/*" = ["D100", "D103"]
 
 [tool.mypy]
-python_version = "3.10"
+# Analyse against 3.12 so mypy can parse recent numpy type stubs, which use PEP
+# 695 `type` statements (rejected under an older target). Runtime compatibility
+# with 3.10+ is verified by the test matrix, not by mypy.
+python_version = "3.12"
 strict = true
 # numpy operations are typed as returning Any, so warn_return_any (part of
 # strict) fires on almost every array-returning function. Disable just that one
 # strict flag; the valuable checks (untyped defs, untyped calls) stay on.
 warn_return_any = false
 
-# The scientific stack ships no type stubs; treat these as untyped and do not
-# follow into their source (skimage transitively imports code using syntax newer
-# than our target, which mypy would otherwise try to parse).
+# The rest of the scientific stack ships no usable stubs; treat as untyped and
+# do not follow into their source.
 [[tool.mypy.overrides]]
 module = [
     "scipy.*",
