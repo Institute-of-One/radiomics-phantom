@@ -2,7 +2,7 @@
 
 **Synthetic digital phantoms and an IBSI-compliant radiomics core for feature-stability research.**
 
-![CI](https://github.com/institute-of-one/radiomics-phantom/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Institute-of-One/radiomics-phantom/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![IBSI](https://img.shields.io/badge/IBSI--1-482%2F482%20reference%20values-brightgreen)

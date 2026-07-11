@@ -44,8 +44,8 @@ dev = [
 oracle = ["mirp>=2.2"]
 
 [project.urls]
-Homepage = "https://github.com/institute-of-one/radiomics-phantom"
-Issues = "https://github.com/institute-of-one/radiomics-phantom/issues"
+Homepage = "https://github.com/Institute-of-One/radiomics-phantom"
+Issues = "https://github.com/Institute-of-One/radiomics-phantom/issues"
 
 [tool.setuptools.packages.find]
 include = ["rphantom*"]

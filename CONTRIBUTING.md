@@ -10,7 +10,7 @@ request.
 Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/institute-of-one/radiomics-phantom
+git clone https://github.com/Institute-of-One/radiomics-phantom
 cd radiomics-phantom
 python -m pip install -e ".[dev]"
 python -m pytest          # expect the whole suite to pass

@@ -23,7 +23,7 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/institute-of-one/radiomics-phantom",
+      "identifier": "https://github.com/Institute-of-One/radiomics-phantom",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

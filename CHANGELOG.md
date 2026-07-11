@@ -83,10 +83,10 @@ Project skeleton and phantom generator.
 - Repository scaffold: packaging, licence (MIT), `CITATION.cff`, `.zenodo.json`,
   and the first example and tests.
 
-[Unreleased]: https://github.com/institute-of-one/radiomics-phantom/compare/v0.6.0...HEAD
-[0.6.0]: https://github.com/institute-of-one/radiomics-phantom/releases/tag/v0.6.0
-[0.5.0]: https://github.com/institute-of-one/radiomics-phantom/releases/tag/v0.5.0
-[0.4.0]: https://github.com/institute-of-one/radiomics-phantom/releases/tag/v0.4.0
-[0.3.0]: https://github.com/institute-of-one/radiomics-phantom/releases/tag/v0.3.0
-[0.2.0]: https://github.com/institute-of-one/radiomics-phantom/releases/tag/v0.2.0
-[0.1.0]: https://github.com/institute-of-one/radiomics-phantom/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Institute-of-One/radiomics-phantom/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/Institute-of-One/radiomics-phantom/releases/tag/v0.6.0
+[0.5.0]: https://github.com/Institute-of-One/radiomics-phantom/releases/tag/v0.5.0
+[0.4.0]: https://github.com/Institute-of-One/radiomics-phantom/releases/tag/v0.4.0
+[0.3.0]: https://github.com/Institute-of-One/radiomics-phantom/releases/tag/v0.3.0
+[0.2.0]: https://github.com/Institute-of-One/radiomics-phantom/releases/tag/v0.2.0
+[0.1.0]: https://github.com/Institute-of-One/radiomics-phantom/releases/tag/v0.1.0

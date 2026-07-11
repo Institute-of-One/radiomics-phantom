@@ -12,7 +12,7 @@ type: software
 version: "0.6.0"
 date-released: "2026-07-10"
 license: MIT
-repository-code: "https://github.com/institute-of-one/radiomics-phantom"
+repository-code: "https://github.com/Institute-of-One/radiomics-phantom"
 authors:
   - family-names: Yamamoto
     given-names: Shuji
