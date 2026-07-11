@@ -1,0 +1,7 @@
+# Runtime dependencies. Deliberately minimal and pure-Python-stack:
+# no PyRadiomics, no deep-learning frameworks.
+numpy>=1.24
+scipy>=1.10
+scikit-image>=0.21
+pingouin>=0.5
+matplotlib>=3.7

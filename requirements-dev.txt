@@ -1,0 +1,14 @@
+-r requirements.txt
+
+pytest>=7.4
+pytest-cov>=4.1
+ruff>=0.4
+mypy>=1.8
+
+# ICC oracle for the stability tests (validated against our first-principles ICC).
+pingouin>=0.5
+
+# Reference oracles for cross-checking the IBSI feature core in CI.
+# These are development-only and must never become runtime dependencies.
+# Uncomment once tests/test_ibsi_oracle.py exists.
+# mirp>=2.2

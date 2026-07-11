@@ -1,0 +1,7 @@
+# Normalise line endings to LF in the repository, on every platform.
+* text=auto eol=lf
+
+# Binary assets must not be line-ending converted.
+*.png binary
+*.nii binary
+*.nii.gz binary

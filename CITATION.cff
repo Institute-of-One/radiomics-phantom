@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "radiomics-phantom: synthetic digital phantoms and an IBSI-compliant radiomics core for feature-stability research"
+abstract: >-
+  An open, fully synthetic research kernel for studying the stability of
+  radiomics features under acquisition variation. It provides deterministic
+  digital texture phantoms with known ground truth, a from-scratch
+  IBSI-compliant feature core, an acquisition simulator, a feature-stability
+  atlas, and physics-based feature normalisation. No patient data, no DICOM,
+  and no deep learning are involved.
+type: software
+version: "0.6.0"
+date-released: "2026-07-10"
+license: MIT
+repository-code: "https://github.com/institute-of-one/radiomics-phantom"
+authors:
+  - family-names: Yamamoto
+    given-names: Shuji
+    email: yamamoto@lisit.jp
+    affiliation: "Institute of One"
+    # TODO: add ORCID before the first Zenodo release.
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - radiomics
+  - IBSI
+  - digital phantom
+  - reproducibility
+  - feature stability
+  - medical imaging
+# TODO: after the first Zenodo deposition, add the concept DOI here:
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: Concept DOI for all versions.

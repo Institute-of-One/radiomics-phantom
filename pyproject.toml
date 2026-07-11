@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rphantom"
+version = "0.6.0"
+description = "Synthetic digital phantoms and an IBSI-compliant radiomics feature core for studying feature stability."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shuji Yamamoto", email = "yamamoto@lisit.jp" }]
+keywords = ["radiomics", "IBSI", "phantom", "reproducibility", "medical imaging"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+# Runtime dependencies are deliberately minimal. PyRadiomics is not used;
+# MIRP / PySERA appear only as development-time reference oracles.
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-image>=0.21",
+    "pingouin>=0.5",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "mypy>=1.8",
+]
+# Independent implementations used to cross-check the IBSI feature core in CI.
+# Never a runtime dependency.
+oracle = ["mirp>=2.2"]
+
+[project.urls]
+Homepage = "https://github.com/institute-of-one/radiomics-phantom"
+Issues = "https://github.com/institute-of-one/radiomics-phantom/issues"
+
+[tool.setuptools.packages.find]
+include = ["rphantom*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+filterwarnings = ["error::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "NPY", "D"]
+# D203/D213: mutually exclusive docstring layouts (we use D211/D212).
+# D401/D404: imperative-mood/wording checks that misfire on the descriptive
+# attribute and property docstrings this codebase favours.
+ignore = ["D203", "D213", "D401", "D404"]
+
+[tool.ruff.lint.per-file-ignores]
+# Re-exports declared in __all__ read as "unused" to F401.
+"__init__.py" = ["F401"]
+# Tests, apps and scripts don't need docstrings on every symbol.
+"tests/*" = ["D100", "D101", "D102", "D103", "D104", "D105", "D107"]
+"apps/*" = ["D100", "D101", "D102", "D103", "D104", "D105", "D107"]
+"examples/*" = ["D100", "D103"]
+"scripts/*" = ["D100", "D103"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+# numpy operations are typed as returning Any, so warn_return_any (part of
+# strict) fires on almost every array-returning function. Disable just that one
+# strict flag; the valuable checks (untyped defs, untyped calls) stay on.
+warn_return_any = false
+
+# The scientific stack ships no type stubs; treat these as untyped and do not
+# follow into their source (skimage transitively imports code using syntax newer
+# than our target, which mypy would otherwise try to parse).
+[[tool.mypy.overrides]]
+module = [
+    "scipy.*",
+    "skimage.*",
+    "matplotlib.*",
+    "pingouin.*",
+    "tifffile.*",
+]
+ignore_missing_imports = true
+follow_imports = "skip"
