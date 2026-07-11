@@ -20,8 +20,7 @@ authors:
     given-names: Shuji
     email: yamamoto@lisit.jp
     affiliation: "Institute of One"
-    # TODO: add ORCID before the first Zenodo release.
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    orcid: "https://orcid.org/0000-0001-9211-1071"
 keywords:
   - radiomics
   - IBSI
