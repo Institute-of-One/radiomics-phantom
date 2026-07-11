@@ -6,6 +6,7 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![IBSI](https://img.shields.io/badge/IBSI--1-482%2F482%20reference%20values-brightgreen)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21309875.svg)](https://doi.org/10.5281/zenodo.21309875)
 
 Radiomics features are notoriously sensitive to how an image was acquired. Separating that
 sensitivity from real biological signal normally requires patient data, which cannot be shared.
@@ -252,7 +253,10 @@ feature.
 
 ## Citing
 
-See [`CITATION.cff`](CITATION.cff). A Zenodo DOI will be minted on the first release.
+Archived on Zenodo with a DOI that always resolves to the latest version:
+**[10.5281/zenodo.21309875](https://doi.org/10.5281/zenodo.21309875)**. Machine-readable
+metadata is in [`CITATION.cff`](CITATION.cff); GitHub's *Cite this repository* button renders
+a ready-made citation from it.
 
 ## Licence
 

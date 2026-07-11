@@ -28,8 +28,7 @@ keywords:
   - reproducibility
   - feature stability
   - medical imaging
-# TODO: after the first Zenodo deposition, add the concept DOI here:
-# identifiers:
-#   - type: doi
-#     value: 10.5281/zenodo.XXXXXXX
-#     description: Concept DOI for all versions.
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21309875
+    description: Concept DOI (always resolves to the latest version).
