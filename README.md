@@ -251,6 +251,13 @@ it, the 449 IBSI reference values, run-length and zone decompositions on volumes
 hand, and an explicit exception for every malformed input and every mathematically undefined
 feature.
 
+## Preprint
+
+The accompanying manuscript lives in [`paper/`](paper/) as part of the version-controlled
+research package: the canonical Markdown, a compiled PDF with embedded figures, a
+deterministic figure/number generator, and a medRxiv submission kit. Every quoted value is
+reproduced by `paper/make_figures.py`.
+
 ## Citing
 
 Archived on Zenodo with a DOI that always resolves to the latest version:

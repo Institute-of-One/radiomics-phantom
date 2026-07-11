@@ -10,7 +10,12 @@ deposition.
 
 ## [Unreleased]
 
-- Nothing yet.
+### Added
+- `paper/`: the preprint manuscript (`radiomics-phantom_medRxiv.md`, canonical
+  Markdown), its compiled PDF, embedded figures with a `results.json` of every
+  quoted number, a figure/number generator (`make_figures.py`), a no-pandoc PDF
+  renderer (`build_pdf.py`), and a medRxiv submission kit. The manuscript is part
+  of the version-controlled reproducible research package (IORN house convention).
 
 ## [0.6.0] — 2026-07-11
 

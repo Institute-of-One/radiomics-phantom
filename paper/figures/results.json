@@ -1,0 +1,81 @@
+{
+  "fig1": {
+    "psf_fwhm_mm": 2.0,
+    "noise_sigma": 25.0
+  },
+  "atlas": {
+    "n_features": 136,
+    "n_targets": 5,
+    "n_conditions": 5,
+    "icc_min": -0.19999999999999998,
+    "icc_median": 0.024752204519839727,
+    "icc_max": 1.0,
+    "n_icc_gt_0_9": 3,
+    "least_stable": [
+      [
+        "ih_iqr",
+        -0.2
+      ],
+      [
+        "ih_qcod",
+        -0.123
+      ],
+      [
+        "ngt_strength_3D",
+        -0.044
+      ],
+      [
+        "ngl_dcnu_3D",
+        -0.031
+      ],
+      [
+        "ngl_dcnu_norm_3D",
+        -0.031
+      ]
+    ],
+    "most_stable": [
+      [
+        "ih_min",
+        1.0
+      ],
+      [
+        "ngl_dc_perc_3D",
+        1.0
+      ],
+      [
+        "cm_clust_shade_3D_comb",
+        0.988
+      ],
+      [
+        "stat_median",
+        0.863
+      ],
+      [
+        "ih_skew",
+        0.816
+      ]
+    ]
+  },
+  "normalisation": {
+    "var0": 625.0,
+    "b": 1.0009,
+    "r_squared": 1.0,
+    "raw_max": 1525.9,
+    "normalised_spread": 0.229,
+    "normalised_mean": 625.1
+  },
+  "acquisition": {
+    "contrast_noise": {
+      "0": 0.261,
+      "10": 0.6,
+      "25": 2.281,
+      "50": 8.267
+    },
+    "contrast_blur": {
+      "0": 0.261,
+      "2": 0.242,
+      "4": 0.205,
+      "6": 0.164
+    }
+  }
+}

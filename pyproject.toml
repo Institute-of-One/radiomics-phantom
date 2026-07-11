@@ -86,6 +86,8 @@ ignore = ["D203", "D213", "D401", "D404"]
 "apps/*" = ["D100", "D101", "D102", "D103", "D104", "D105", "D107"]
 "examples/*" = ["D100", "D103"]
 "scripts/*" = ["D100", "D103"]
+# Manuscript figure/PDF scripts: compact plotting code, no docstring requirement.
+"paper/*" = ["D100", "D103", "E702"]
 
 [tool.mypy]
 # Analyse against 3.12 so mypy can parse recent numpy type stubs, which use PEP
