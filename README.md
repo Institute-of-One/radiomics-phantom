@@ -1,6 +1,6 @@
 # radiomics-phantom
 
-**Synthetic digital phantoms and an IBSI-compliant radiomics core for feature-stability research.**
+**IORN-002 — A Physics-Based Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms**
 
 ![CI](https://github.com/Institute-of-One/radiomics-phantom/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
@@ -14,6 +14,11 @@ statistics are **known by construction**, and every feature is computed **from f
 The result is a citable research kernel that anyone can rerun end to end.
 
 > Part of *Institute of One* (IORN-002).
+
+> **Scope.** This is a methodological software contribution using synthetic digital phantoms
+> only. It involves no human subjects, no patient data, and makes no clinical performance
+> claims; institutional review, informed consent, and clinical validation are therefore not
+> applicable.
 
 **Documentation:** [Architecture](docs/architecture.md) · [Methodology](docs/methodology.md) ·
 [API reference](docs/api.md) · [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md)

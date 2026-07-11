@@ -1,13 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "radiomics-phantom: synthetic digital phantoms and an IBSI-compliant radiomics core for feature-stability research"
+title: "radiomics-phantom: A Physics-Based Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms"
 abstract: >-
-  An open, fully synthetic research kernel for studying the stability of
-  radiomics features under acquisition variation. It provides deterministic
-  digital texture phantoms with known ground truth, a from-scratch
-  IBSI-compliant feature core, an acquisition simulator, a feature-stability
-  atlas, and physics-based feature normalisation. No patient data, no DICOM,
-  and no deep learning are involved.
+  An open, fully synthetic research kernel (IORN-002) for mapping the stability
+  of radiomics features under acquisition variation. It provides deterministic
+  digital texture phantoms with known ground truth, a from-scratch feature core
+  reproducing all 482 IBSI-1 digital-phantom reference values, an acquisition
+  simulator, an ICC/CCC feature-stability atlas, and physics-based feature
+  normalisation. This is a methodological software contribution using synthetic
+  digital phantoms only: it involves no human subjects, no patient data, no
+  DICOM, and no deep learning, and makes no clinical performance claims.
 type: software
 version: "0.6.0"
 date-released: "2026-07-10"

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rphantom"
 version = "0.6.0"
-description = "Synthetic digital phantoms and an IBSI-compliant radiomics feature core for studying feature stability."
+description = "A physics-based stability atlas for IBSI radiomics features using synthetic digital phantoms."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
