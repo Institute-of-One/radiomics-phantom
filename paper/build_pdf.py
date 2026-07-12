@@ -189,7 +189,7 @@ def main() -> None:
             cap, path = img.group(1), img.group(2)
             p = HERE / path
             w, h = png_size(p)
-            width = 5.2 * inch
+            width = 4.9 * inch
             story.append(Image(str(p), width=width, height=width * h / w))
             story.append(Paragraph(inline(cap), caption))
             i += 1

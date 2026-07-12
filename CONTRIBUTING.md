@@ -38,7 +38,7 @@ Every change must preserve these. They are what make the project trustworthy.
    `tests/test_features_ibsi.py`; `test_reference_coverage_is_declared` pins the
    boundary of what is implemented so it cannot silently drift.
 3. **Determinism.** Every stochastic function takes a `seed` and, given the same
-   inputs, produces a bit-identical result across runs and processes. Do not use
+   inputs, produces the same result across runs within a pinned environment. Do not use
    `Date.now`-style or unseeded randomness.
 4. **No silent failure.** A degenerate or undefined result raises a specific,
    messageful exception (`FeatureError`, `AcquisitionError`, `StabilityError`,

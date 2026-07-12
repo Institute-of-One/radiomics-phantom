@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "radiomics-phantom: A Physics-Based Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms"
+title: "radiomics-phantom: A Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms, with Proof-of-Concept Physics-Based Normalisation"
 abstract: >-
   An open, fully synthetic research kernel (IORN-002) for mapping the stability
   of radiomics features under acquisition variation. It provides deterministic

@@ -16,6 +16,20 @@ deposition.
   quoted number, a figure/number generator (`make_figures.py`), a no-pandoc PDF
   renderer (`build_pdf.py`), and a medRxiv submission kit. The manuscript is part
   of the version-controlled reproducible research package (IORN house convention).
+- `paper/supplementary/`: machine-readable `feature_inventory.csv` (482 benchmark
+  features and their inclusion in the 136-feature stability atlas) and
+  `stability_atlas.csv` (per-feature ICC/CCC with a constant-feature status flag),
+  produced by `paper/make_supplementary.py`.
+
+### Changed
+- Preprint revision: moderated wording throughout the repository to be more
+  defensible — "IBSI-compliant"/"reproduces exactly" → "IBSI-aligned"/"matched at
+  the reported precision within applicable IBSI tolerances"; "bit-identical"/
+  "bit-stable" → "deterministic within a pinned software environment"; normalisation
+  reframed as a proof of concept; and the two constant (zero-variance) features whose
+  ICC is forced to 1.0 are now described as a definitional artefact rather than
+  measured robustness. README, docs, and code docstrings updated for consistency;
+  five references added.
 
 ## [0.6.0] — 2026-07-11
 
@@ -51,7 +65,8 @@ Feature core completed.
 ### Added
 - `rphantom/features.py`: morphology (IBSI 3.1), local intensity (3.2) and the
   intensity-volume histogram (3.5). All **482** published IBSI digital-phantom
-  reference values are now reproduced exactly.
+  benchmark values are matched at the reported precision, within the applicable
+  IBSI tolerances.
 
 ### Fixed
 - Guard against a planar (zero-thickness) ROI in morphology, and against a
@@ -73,7 +88,7 @@ IBSI feature core begins.
 ### Added
 - `rphantom/features.py`: fixed-bin-size/number discretisation, intensity
   statistics (3.3), intensity histogram (3.4), GLCM (3.6) and GLRLM (3.7) over all
-  six IBSI aggregations. 287 reference values reproduced exactly.
+  six IBSI aggregations. 287 benchmark values matched at the reported precision.
 - `scripts/fetch_ibsi_reference.py`: regenerates the test fixtures directly from
   the authoritative IBSI phantom and value table (no hand transcription).
 

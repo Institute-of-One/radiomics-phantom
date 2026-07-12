@@ -1,0 +1,137 @@
+feature_name,feature_family,ICC_2_1,median_CCC,minimum_value,maximum_value,status
+cm_clust_shade_3D_comb,grey-level co-occurrence,0.9881,0.9892,-1.56597,3.245011,measured
+stat_median,intensity statistics,0.8633,0.8854,36.956844,42.273458,measured
+ih_skew,intensity histogram,0.8155,0.8318,-0.193658,0.364295,measured
+stat_skew,intensity statistics,0.7938,0.809,-0.245199,0.432904,measured
+szm_zs_entr_3D,grey-level size zone,0.4047,0.3043,3.418296,5.926149,measured
+ih_kurt,intensity histogram,0.3762,0.3939,-0.668571,-0.005396,measured
+stat_kurt,intensity statistics,0.3759,0.4275,-0.716809,-0.001743,measured
+dzm_sdhge_3D,grey-level distance zone,0.2863,0.6737,6.463557,27.993889,measured
+dzm_ldlge_3D,grey-level distance zone,0.2673,0.1479,0.227201,2.405225,measured
+ih_cov,intensity histogram,0.2209,0.1662,0.226574,0.352496,measured
+rlm_srlge_3D_comb,grey-level run length,0.1999,0.2586,0.021826,0.07839,measured
+ngl_hdhge_3D,neighbouring grey-level dependence,0.175,0.1146,1773.174769,4705.596209,measured
+dzm_lgze_3D,grey-level distance zone,0.1493,0.1469,0.041631,0.637741,measured
+szm_lgze_3D,grey-level size zone,0.1493,0.1469,0.041631,0.637741,measured
+rlm_lrhge_3D_comb,grey-level run length,0.1322,0.0372,61.603989,236.539879,measured
+dzm_sdlge_3D,grey-level distance zone,0.1217,0.0853,0.017318,0.637741,measured
+rlm_glnu_3D_comb,grey-level run length,0.106,0.0555,12491.724812,28317.258194,measured
+stat_mean,intensity statistics,0.0933,0.1362,39.977468,40.02028,measured
+ih_min_grad,intensity histogram,0.0905,0.0507,-3813.0,-990.0,measured
+rlm_lrlge_3D_comb,grey-level run length,0.0838,0.0113,0.047289,5.753871,measured
+szm_lzlge_3D,grey-level size zone,0.0819,0.0005,693.522406,755091.401132,measured
+ih_min_grad_g,intensity histogram,0.0804,0.1859,4.0,9.0,measured
+ih_max_grad,intensity histogram,0.0782,0.1055,1055.0,3912.0,measured
+ngl_ldlge_3D,neighbouring grey-level dependence,0.0752,0.0116,0.000516,0.006376,measured
+ih_mode,intensity histogram,0.0747,0.0876,3.0,7.0,measured
+szm_szlge_3D,grey-level size zone,0.0709,0.0683,4.1e-05,0.144116,measured
+rlm_lre_3D_comb,grey-level run length,0.0683,0.0132,1.871518,26.801921,measured
+rlm_rl_entr_3D_comb,grey-level run length,0.0651,0.0364,3.562699,5.172115,measured
+dzm_hgze_3D,grey-level distance zone,0.0645,0.1002,6.933333,58.143784,measured
+szm_hgze_3D,grey-level size zone,0.0645,0.1002,6.933333,58.143784,measured
+rlm_rl_var_3D_comb,grey-level run length,0.0644,0.0157,0.319817,9.75223,measured
+dzm_glnu_norm_3D,grey-level distance zone,0.0611,-0.0207,0.115914,0.404444,measured
+szm_glnu_norm_3D,grey-level size zone,0.0611,-0.0207,0.115914,0.404444,measured
+szm_lzhge_3D,grey-level size zone,0.0606,-0.0007,1107337.362661,43093156.615385,measured
+szm_lze_3D,grey-level size zone,0.058,-0.0013,30997.424893,4129675.0,measured
+cm_info_corr1_3D_comb,grey-level co-occurrence,0.0547,0.0429,-0.601313,-0.02884,measured
+cm_corr_3D_comb,grey-level co-occurrence,0.0534,0.0744,0.320437,0.911241,measured
+stat_max,intensity statistics,0.05,0.0761,91.031021,205.762589,measured
+rlm_lgre_3D_comb,grey-level run length,0.0498,0.0584,0.025476,0.228953,measured
+ngl_hdlge_3D,neighbouring grey-level dependence,0.0496,0.0181,1.145203,99.920753,measured
+cm_info_corr2_3D_comb,grey-level co-occurrence,0.0494,0.076,0.381042,0.954493,measured
+ngl_lgce_3D,neighbouring grey-level dependence,0.0446,0.0491,0.025016,0.213711,measured
+szm_zs_var_3D,grey-level size zone,0.0414,-0.0016,30777.418335,2987130.390533,measured
+rlm_hgre_3D_comb,grey-level run length,0.0394,0.0445,8.674642,51.912139,measured
+stat_min,intensity statistics,0.0382,0.0515,-122.70118,-16.389708,measured
+ih_mean,intensity histogram,0.0379,0.051,2.766493,7.006221,measured
+stat_p90,intensity statistics,0.037,0.0867,65.309219,93.011284,measured
+ngl_hgce_3D,neighbouring grey-level dependence,0.0369,0.0421,8.604456,51.60706,measured
+ngl_dc_energy_3D,neighbouring grey-level dependence,0.0368,-0.1911,0.014835,0.028829,measured
+ih_p90,intensity histogram,0.0347,0.0378,4.0,9.0,measured
+dzm_gl_var_3D,grey-level distance zone,0.0345,0.0816,2.293333,9.197897,measured
+szm_gl_var_3D,grey-level size zone,0.0345,0.0816,2.293333,9.197897,measured
+ngl_dc_var_3D,neighbouring grey-level dependence,0.0342,0.092,7.973264,27.557142,measured
+cm_auto_corr_3D_comb,grey-level co-occurrence,0.0341,0.0335,8.573086,49.567447,measured
+ngt_coarseness_3D,neighbourhood grey-tone difference,0.0334,-0.0004,0.000484,0.001578,measured
+ngl_hde_3D,neighbouring grey-level dependence,0.0331,0.0256,45.522569,455.006944,measured
+cm_inv_diff_norm_3D_comb,grey-level co-occurrence,0.0329,0.0202,0.898752,0.975351,measured
+cm_joint_avg_3D_comb,grey-level co-occurrence,0.0326,0.0448,2.772611,6.973163,measured
+cm_sum_avg_3D_comb,grey-level co-occurrence,0.0326,0.0448,5.545222,13.946327,measured
+cm_inv_diff_mom_norm_3D_comb,grey-level co-occurrence,0.0296,0.0275,0.977535,0.995337,measured
+rlm_sre_3D_comb,grey-level run length,0.029,0.017,0.234851,0.848741,measured
+cm_inv_var_3D_comb,grey-level co-occurrence,0.028,-0.0018,0.172546,0.51455,measured
+ih_max_grad_g,intensity histogram,0.0273,-0.0046,1.0,5.0,measured
+stat_iqr,intensity statistics,0.0265,0.0595,26.986067,55.964437,measured
+ih_rmad,intensity histogram,0.0254,0.0915,0.541767,1.024713,measured
+rlm_srhge_3D_comb,grey-level run length,0.0249,0.0269,2.078606,43.982065,measured
+rlm_r_perc_3D_comb,grey-level run length,0.0246,0.027,0.242182,0.802779,measured
+stat_p10,intensity statistics,0.0236,0.0828,-12.989169,16.293142,measured
+cm_clust_prom_3D_comb,grey-level co-occurrence,0.0233,0.0377,15.659814,184.237037,measured
+cm_clust_tend_3D_comb,grey-level co-occurrence,0.023,0.0229,2.417109,7.912661,measured
+cm_sum_var_3D_comb,grey-level co-occurrence,0.023,0.0229,2.417109,7.912661,measured
+cm_diff_entr_3D_comb,grey-level co-occurrence,0.0228,0.04,0.663496,2.157302,measured
+cm_inv_diff_3D_comb,grey-level co-occurrence,0.0219,0.0321,0.52057,0.913727,measured
+stat_rmad,intensity statistics,0.0219,0.0492,11.098416,23.161474,measured
+cm_inv_diff_mom_3D_comb,grey-level co-occurrence,0.0203,0.0341,0.462978,0.913727,measured
+stat_qcod,intensity statistics,0.0195,0.033,0.33798,0.702599,measured
+ngl_dc_entr_3D,neighbouring grey-level dependence,0.0191,-0.2481,5.804235,6.395394,measured
+cm_diff_avg_3D_comb,grey-level co-occurrence,0.0173,0.0385,0.172546,1.447602,measured
+cm_dissimilarity_3D_comb,grey-level co-occurrence,0.0173,0.0385,0.172546,1.447602,measured
+rlm_rlnu_norm_3D_comb,grey-level run length,0.0159,0.0219,0.133961,0.674855,measured
+dzm_zdnu_norm_3D,grey-level distance zone,0.0156,-0.0087,0.213429,1.0,measured
+cm_energy_3D_comb,grey-level co-occurrence,0.0131,0.0185,0.030739,0.204688,measured
+szm_szhge_3D,grey-level size zone,0.013,0.0002,0.021664,41.973394,measured
+cm_diff_var_3D_comb,grey-level co-occurrence,0.0129,0.0476,0.142774,1.362075,measured
+rlm_rlnu_3D_comb,grey-level run length,0.0125,0.026,5830.405969,97360.636471,measured
+cm_contrast_3D_comb,grey-level co-occurrence,0.011,0.0419,0.172546,3.457628,measured
+stat_range,intensity statistics,0.0098,0.0235,116.742697,322.654648,measured
+ih_median,intensity histogram,0.0096,0.0,3.0,7.0,measured
+ih_p10,intensity histogram,0.0093,-0.0153,2.0,5.0,measured
+cm_joint_entr_3D_comb,grey-level co-occurrence,0.0092,0.0264,2.789394,5.46603,measured
+stat_mad,intensity statistics,0.009,0.0078,15.460836,33.04305,measured
+stat_medad,intensity statistics,0.0089,0.0083,15.434103,33.042948,measured
+ngl_ldhge_3D,neighbouring grey-level dependence,0.0074,-0.0001,0.029687,5.102602,measured
+szm_zsnu_norm_3D,grey-level size zone,0.0073,0.0066,0.04,0.564731,measured
+cm_sum_entr_3D_comb,grey-level co-occurrence,0.0068,-0.0148,2.583284,3.538968,measured
+rlm_glnu_norm_3D_comb,grey-level run length,0.0065,0.0015,0.161131,0.323634,measured
+ih_uniformity,intensity histogram,0.0064,0.0028,0.16799,0.336911,measured
+ngl_glnu_3D,neighbouring grey-level dependence,0.0064,0.0028,2322.299624,4657.451244,measured
+ngl_glnu_norm_3D,neighbouring grey-level dependence,0.0064,0.0028,0.16799,0.336911,measured
+ih_medad,intensity histogram,0.006,0.0228,0.584491,1.311343,measured
+rlm_gl_var_3D_comb,grey-level run length,0.0055,-0.0011,0.745638,3.031533,measured
+szm_zsnu_3D,grey-level size zone,0.0054,-0.0003,1.0,487.497854,measured
+ih_mad,intensity histogram,0.0053,0.0057,0.604891,1.340645,measured
+stat_energy,intensity statistics,0.0053,-0.0,27140294.865623,45793102.690984,measured
+stat_rms,intensity statistics,0.0052,-0.0,44.308844,57.555015,measured
+stat_var,intensity statistics,0.0052,-0.0,361.885588,1712.579766,measured
+stat_cov,intensity statistics,0.0051,-0.0,0.475376,1.034583,measured
+ih_var,intensity histogram,0.0044,-0.0007,0.672711,2.816629,measured
+ngl_gl_var_3D,neighbouring grey-level dependence,0.0044,-0.0007,0.672711,2.816629,measured
+dzm_ldhge_3D,grey-level distance zone,0.0033,-0.0044,6.933333,764.761081,measured
+dzm_glnu_3D,grey-level distance zone,0.0031,0.0007,2.333333,113.974249,measured
+szm_glnu_3D,grey-level size zone,0.0031,0.0007,2.333333,113.974249,measured
+ih_max,intensity histogram,0.003,0.0256,5.0,13.0,measured
+ih_range,intensity histogram,0.003,0.0256,4.0,12.0,measured
+dzm_sde_3D,grey-level distance zone,0.0027,-0.0115,0.454471,1.0,measured
+cm_joint_var_3D_comb,grey-level co-occurrence,0.0026,-0.0028,0.689264,2.826137,measured
+ngt_complexity_3D,neighbourhood grey-tone difference,0.0022,0.0159,1.703027,74.177163,measured
+ih_entropy,intensity histogram,0.0021,-0.0014,1.755613,2.793793,measured
+dzm_zdnu_3D,grey-level distance zone,0.0013,0.005,10.166667,212.139955,measured
+cm_joint_max_3D_comb,grey-level co-occurrence,0.0008,-0.0006,0.061456,0.319185,measured
+dzm_z_perc_3D,grey-level distance zone,-0.0002,-0.0037,0.000868,0.067419,measured
+szm_z_perc_3D,grey-level size zone,-0.0002,-0.0037,0.000868,0.067419,measured
+ngl_lde_3D,neighbouring grey-level dependence,-0.0003,-0.0014,0.003255,0.093115,measured
+dzm_zd_entr_3D,grey-level distance zone,-0.002,-0.0153,1.738269,5.787916,measured
+szm_sze_3D,grey-level size zone,-0.002,-0.0013,0.000887,0.775999,measured
+dzm_lde_3D,grey-level distance zone,-0.0115,-0.0189,1.0,14.141622,measured
+dzm_zd_var_3D,grey-level distance zone,-0.017,-0.0206,0.0,5.35222,measured
+ngt_busyness_3D,neighbourhood grey-tone difference,-0.0175,0.0265,18.341115,79.140039,measured
+ngt_contrast_3D,neighbourhood grey-tone difference,-0.02,-0.0114,0.010493,0.039045,measured
+ngl_dcnu_3D,neighbouring grey-level dependence,-0.0305,-0.1503,771.554832,1351.489005,measured
+ngl_dcnu_norm_3D,neighbouring grey-level dependence,-0.0305,-0.1503,0.055813,0.097764,measured
+ngt_strength_3D,neighbourhood grey-tone difference,-0.0445,-0.0819,0.00855,0.031137,measured
+ih_qcod,intensity histogram,-0.1226,0.0034,0.090909,0.333333,measured
+ih_iqr,intensity histogram,-0.2,-0.2587,1.0,2.0,measured
+ih_min,intensity histogram,1.0,,1.0,1.0,constant (ICC forced to 1.0; not measured agreement)
+ngl_dc_perc_3D,neighbouring grey-level dependence,1.0,,1.0,1.0,constant (ICC forced to 1.0; not measured agreement)

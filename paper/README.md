@@ -10,15 +10,18 @@ code as part of the research package. Structure follows the IORN house conventio
 | `radiomics-phantom_medRxiv.pdf` | Compiled manuscript, figures embedded — the file uploaded to medRxiv |
 | `medRxiv_submission_kit.md` | Copy-paste-ready fields and checklist for the medRxiv form |
 | `make_figures.py` | Regenerates every figure and number from the library (deterministic) |
+| `make_supplementary.py` | Regenerates the machine-readable supplementary tables |
 | `build_pdf.py` | Renders the Markdown manuscript to PDF without pandoc/LaTeX |
 | `figures/` | Figure PNGs and `results.json` (every number quoted in the text) |
+| `supplementary/` | `feature_inventory.csv` (482 benchmark features → atlas inclusion) and `stability_atlas.csv` (per-feature ICC/CCC + status) |
 
 ## Reproduce
 
 ```bash
 python -m pip install -e ".[dev]" reportlab   # reportlab only needed for build_pdf.py
-python paper/make_figures.py      # -> figures/*.png and figures/results.json
-python paper/build_pdf.py         # -> radiomics-phantom_medRxiv.pdf
+python paper/make_figures.py       # -> figures/*.png and figures/results.json
+python paper/make_supplementary.py # -> supplementary/*.csv
+python paper/build_pdf.py          # -> radiomics-phantom_medRxiv.pdf
 # or, when pandoc + a LaTeX engine are available:
 # pandoc paper/radiomics-phantom_medRxiv.md -o paper/radiomics-phantom_medRxiv.pdf
 ```

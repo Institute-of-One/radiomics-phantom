@@ -1,0 +1,483 @@
+feature_family,feature_name,aggregation,included_in_ibsi_benchmark,included_in_stability_atlas,exclusion_reason
+grey-level co-occurrence,cm_auto_corr,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_auto_corr,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_auto_corr,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_auto_corr,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_auto_corr,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_auto_corr,3D_comb,1,1,
+grey-level co-occurrence,cm_clust_prom,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_prom,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_prom,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_prom,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_prom,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_prom,3D_comb,1,1,
+grey-level co-occurrence,cm_clust_shade,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_shade,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_shade,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_shade,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_shade,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_shade,3D_comb,1,1,
+grey-level co-occurrence,cm_clust_tend,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_tend,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_tend,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_tend,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_tend,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_clust_tend,3D_comb,1,1,
+grey-level co-occurrence,cm_contrast,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_contrast,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_contrast,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_contrast,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_contrast,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_contrast,3D_comb,1,1,
+grey-level co-occurrence,cm_corr,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_corr,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_corr,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_corr,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_corr,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_corr,3D_comb,1,1,
+grey-level co-occurrence,cm_diff_avg,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_avg,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_avg,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_avg,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_avg,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_avg,3D_comb,1,1,
+grey-level co-occurrence,cm_diff_entr,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_entr,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_entr,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_entr,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_entr,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_entr,3D_comb,1,1,
+grey-level co-occurrence,cm_diff_var,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_var,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_var,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_var,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_var,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_diff_var,3D_comb,1,1,
+grey-level co-occurrence,cm_dissimilarity,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_dissimilarity,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_dissimilarity,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_dissimilarity,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_dissimilarity,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_dissimilarity,3D_comb,1,1,
+grey-level co-occurrence,cm_energy,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_energy,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_energy,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_energy,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_energy,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_energy,3D_comb,1,1,
+grey-level co-occurrence,cm_info_corr1,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr1,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr1,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr1,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr1,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr1,3D_comb,1,1,
+grey-level co-occurrence,cm_info_corr2,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr2,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr2,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr2,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr2,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_info_corr2,3D_comb,1,1,
+grey-level co-occurrence,cm_inv_diff,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff,3D_comb,1,1,
+grey-level co-occurrence,cm_inv_diff_mom,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom,3D_comb,1,1,
+grey-level co-occurrence,cm_inv_diff_mom_norm,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom_norm,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom_norm,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom_norm,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom_norm,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_mom_norm,3D_comb,1,1,
+grey-level co-occurrence,cm_inv_diff_norm,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_norm,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_norm,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_norm,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_norm,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_diff_norm,3D_comb,1,1,
+grey-level co-occurrence,cm_inv_var,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_var,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_var,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_var,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_var,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_inv_var,3D_comb,1,1,
+grey-level co-occurrence,cm_joint_avg,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_avg,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_avg,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_avg,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_avg,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_avg,3D_comb,1,1,
+grey-level co-occurrence,cm_joint_entr,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_entr,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_entr,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_entr,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_entr,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_entr,3D_comb,1,1,
+grey-level co-occurrence,cm_joint_max,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_max,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_max,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_max,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_max,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_max,3D_comb,1,1,
+grey-level co-occurrence,cm_joint_var,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_var,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_var,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_var,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_var,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_joint_var,3D_comb,1,1,
+grey-level co-occurrence,cm_sum_avg,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_avg,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_avg,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_avg,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_avg,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_avg,3D_comb,1,1,
+grey-level co-occurrence,cm_sum_entr,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_entr,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_entr,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_entr,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_entr,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_entr,3D_comb,1,1,
+grey-level co-occurrence,cm_sum_var,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_var,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_var,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_var,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_var,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level co-occurrence,cm_sum_var,3D_comb,1,1,
+grey-level distance zone,dzm_gl_var,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_gl_var,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_gl_var,3D,1,1,
+grey-level distance zone,dzm_glnu,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_glnu,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_glnu,3D,1,1,
+grey-level distance zone,dzm_glnu_norm,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_glnu_norm,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_glnu_norm,3D,1,1,
+grey-level distance zone,dzm_hgze,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_hgze,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_hgze,3D,1,1,
+grey-level distance zone,dzm_lde,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_lde,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_lde,3D,1,1,
+grey-level distance zone,dzm_ldhge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_ldhge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_ldhge,3D,1,1,
+grey-level distance zone,dzm_ldlge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_ldlge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_ldlge,3D,1,1,
+grey-level distance zone,dzm_lgze,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_lgze,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_lgze,3D,1,1,
+grey-level distance zone,dzm_sde,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_sde,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_sde,3D,1,1,
+grey-level distance zone,dzm_sdhge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_sdhge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_sdhge,3D,1,1,
+grey-level distance zone,dzm_sdlge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_sdlge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_sdlge,3D,1,1,
+grey-level distance zone,dzm_z_perc,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_z_perc,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_z_perc,3D,1,1,
+grey-level distance zone,dzm_zd_entr,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zd_entr,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zd_entr,3D,1,1,
+grey-level distance zone,dzm_zd_var,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zd_var,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zd_var,3D,1,1,
+grey-level distance zone,dzm_zdnu,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zdnu,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zdnu,3D,1,1,
+grey-level distance zone,dzm_zdnu_norm,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zdnu_norm,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level distance zone,dzm_zdnu_norm,3D,1,1,
+intensity histogram,ih_cov,none,1,1,
+intensity histogram,ih_entropy,none,1,1,
+intensity histogram,ih_iqr,none,1,1,
+intensity histogram,ih_kurt,none,1,1,
+intensity histogram,ih_mad,none,1,1,
+intensity histogram,ih_max,none,1,1,
+intensity histogram,ih_max_grad,none,1,1,
+intensity histogram,ih_max_grad_g,none,1,1,
+intensity histogram,ih_mean,none,1,1,
+intensity histogram,ih_medad,none,1,1,
+intensity histogram,ih_median,none,1,1,
+intensity histogram,ih_min,none,1,1,
+intensity histogram,ih_min_grad,none,1,1,
+intensity histogram,ih_min_grad_g,none,1,1,
+intensity histogram,ih_mode,none,1,1,
+intensity histogram,ih_p10,none,1,1,
+intensity histogram,ih_p90,none,1,1,
+intensity histogram,ih_qcod,none,1,1,
+intensity histogram,ih_range,none,1,1,
+intensity histogram,ih_rmad,none,1,1,
+intensity histogram,ih_skew,none,1,1,
+intensity histogram,ih_uniformity,none,1,1,
+intensity histogram,ih_var,none,1,1,
+intensity-volume histogram,ivh_diff_i10_i90,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+intensity-volume histogram,ivh_diff_v10_v90,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+intensity-volume histogram,ivh_i10,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+intensity-volume histogram,ivh_i90,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+intensity-volume histogram,ivh_v10,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+intensity-volume histogram,ivh_v90,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+local intensity,loc_peak_glob,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+local intensity,loc_peak_loc,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_area_dens_aabb,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_area_dens_aee,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_area_dens_conv_hull,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_area_mesh,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_asphericity,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_av,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_com,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_comp_1,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_comp_2,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_diam,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_geary_c,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_integ_int,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_moran_i,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_pca_elongation,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_pca_flatness,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_pca_least_axis,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_pca_maj_axis,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_pca_min_axis,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_sph_dispr,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_sphericity,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_vol_approx,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_vol_dens_aabb,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_vol_dens_aee,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_vol_dens_conv_hull,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+morphology,morph_volume,none,1,0,family excluded from atlas (needs lesion mask; not on whole-volume ROI)
+neighbouring grey-level dependence,ngl_dc_energy,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_energy,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_energy,3D,1,1,
+neighbouring grey-level dependence,ngl_dc_entr,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_entr,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_entr,3D,1,1,
+neighbouring grey-level dependence,ngl_dc_perc,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_perc,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_perc,3D,1,1,
+neighbouring grey-level dependence,ngl_dc_var,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_var,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dc_var,3D,1,1,
+neighbouring grey-level dependence,ngl_dcnu,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dcnu,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dcnu,3D,1,1,
+neighbouring grey-level dependence,ngl_dcnu_norm,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dcnu_norm,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_dcnu_norm,3D,1,1,
+neighbouring grey-level dependence,ngl_gl_var,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_gl_var,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_gl_var,3D,1,1,
+neighbouring grey-level dependence,ngl_glnu,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_glnu,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_glnu,3D,1,1,
+neighbouring grey-level dependence,ngl_glnu_norm,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_glnu_norm,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_glnu_norm,3D,1,1,
+neighbouring grey-level dependence,ngl_hde,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hde,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hde,3D,1,1,
+neighbouring grey-level dependence,ngl_hdhge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hdhge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hdhge,3D,1,1,
+neighbouring grey-level dependence,ngl_hdlge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hdlge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hdlge,3D,1,1,
+neighbouring grey-level dependence,ngl_hgce,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hgce,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_hgce,3D,1,1,
+neighbouring grey-level dependence,ngl_lde,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_lde,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_lde,3D,1,1,
+neighbouring grey-level dependence,ngl_ldhge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_ldhge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_ldhge,3D,1,1,
+neighbouring grey-level dependence,ngl_ldlge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_ldlge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_ldlge,3D,1,1,
+neighbouring grey-level dependence,ngl_lgce,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_lgce,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbouring grey-level dependence,ngl_lgce,3D,1,1,
+neighbourhood grey-tone difference,ngt_busyness,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_busyness,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_busyness,3D,1,1,
+neighbourhood grey-tone difference,ngt_coarseness,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_coarseness,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_coarseness,3D,1,1,
+neighbourhood grey-tone difference,ngt_complexity,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_complexity,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_complexity,3D,1,1,
+neighbourhood grey-tone difference,ngt_contrast,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_contrast,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_contrast,3D,1,1,
+neighbourhood grey-tone difference,ngt_strength,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_strength,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+neighbourhood grey-tone difference,ngt_strength,3D,1,1,
+grey-level run length,rlm_gl_var,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_gl_var,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_gl_var,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_gl_var,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_gl_var,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_gl_var,3D_comb,1,1,
+grey-level run length,rlm_glnu,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu,3D_comb,1,1,
+grey-level run length,rlm_glnu_norm,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu_norm,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu_norm,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu_norm,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu_norm,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_glnu_norm,3D_comb,1,1,
+grey-level run length,rlm_hgre,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_hgre,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_hgre,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_hgre,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_hgre,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_hgre,3D_comb,1,1,
+grey-level run length,rlm_lgre,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lgre,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lgre,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lgre,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lgre,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lgre,3D_comb,1,1,
+grey-level run length,rlm_lre,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lre,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lre,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lre,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lre,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lre,3D_comb,1,1,
+grey-level run length,rlm_lrhge,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrhge,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrhge,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrhge,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrhge,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrhge,3D_comb,1,1,
+grey-level run length,rlm_lrlge,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrlge,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrlge,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrlge,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrlge,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_lrlge,3D_comb,1,1,
+grey-level run length,rlm_r_perc,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_r_perc,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_r_perc,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_r_perc,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_r_perc,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_r_perc,3D_comb,1,1,
+grey-level run length,rlm_rl_entr,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_entr,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_entr,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_entr,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_entr,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_entr,3D_comb,1,1,
+grey-level run length,rlm_rl_var,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_var,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_var,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_var,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_var,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rl_var,3D_comb,1,1,
+grey-level run length,rlm_rlnu,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu,3D_comb,1,1,
+grey-level run length,rlm_rlnu_norm,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu_norm,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu_norm,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu_norm,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu_norm,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_rlnu_norm,3D_comb,1,1,
+grey-level run length,rlm_sre,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_sre,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_sre,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_sre,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_sre,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_sre,3D_comb,1,1,
+grey-level run length,rlm_srhge,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srhge,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srhge,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srhge,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srhge,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srhge,3D_comb,1,1,
+grey-level run length,rlm_srlge,2D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srlge,2D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srlge,2_5D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srlge,2_5D_comb,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srlge,3D_avg,1,0,non-primary aggregation (atlas uses 3D_comb for directional families)
+grey-level run length,rlm_srlge,3D_comb,1,1,
+intensity statistics,stat_cov,none,1,1,
+intensity statistics,stat_energy,none,1,1,
+intensity statistics,stat_iqr,none,1,1,
+intensity statistics,stat_kurt,none,1,1,
+intensity statistics,stat_mad,none,1,1,
+intensity statistics,stat_max,none,1,1,
+intensity statistics,stat_mean,none,1,1,
+intensity statistics,stat_medad,none,1,1,
+intensity statistics,stat_median,none,1,1,
+intensity statistics,stat_min,none,1,1,
+intensity statistics,stat_p10,none,1,1,
+intensity statistics,stat_p90,none,1,1,
+intensity statistics,stat_qcod,none,1,1,
+intensity statistics,stat_range,none,1,1,
+intensity statistics,stat_rmad,none,1,1,
+intensity statistics,stat_rms,none,1,1,
+intensity statistics,stat_skew,none,1,1,
+intensity statistics,stat_var,none,1,1,
+grey-level size zone,szm_gl_var,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_gl_var,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_gl_var,3D,1,1,
+grey-level size zone,szm_glnu,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_glnu,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_glnu,3D,1,1,
+grey-level size zone,szm_glnu_norm,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_glnu_norm,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_glnu_norm,3D,1,1,
+grey-level size zone,szm_hgze,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_hgze,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_hgze,3D,1,1,
+grey-level size zone,szm_lgze,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lgze,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lgze,3D,1,1,
+grey-level size zone,szm_lze,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lze,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lze,3D,1,1,
+grey-level size zone,szm_lzhge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lzhge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lzhge,3D,1,1,
+grey-level size zone,szm_lzlge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lzlge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_lzlge,3D,1,1,
+grey-level size zone,szm_sze,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_sze,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_sze,3D,1,1,
+grey-level size zone,szm_szhge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_szhge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_szhge,3D,1,1,
+grey-level size zone,szm_szlge,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_szlge,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_szlge,3D,1,1,
+grey-level size zone,szm_z_perc,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_z_perc,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_z_perc,3D,1,1,
+grey-level size zone,szm_zs_entr,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zs_entr,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zs_entr,3D,1,1,
+grey-level size zone,szm_zs_var,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zs_var,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zs_var,3D,1,1,
+grey-level size zone,szm_zsnu,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zsnu,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zsnu,3D,1,1,
+grey-level size zone,szm_zsnu_norm,2D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zsnu_norm,2_5D,1,0,non-primary aggregation (atlas uses 3D for zone/neighbourhood families)
+grey-level size zone,szm_zsnu_norm,3D,1,1,

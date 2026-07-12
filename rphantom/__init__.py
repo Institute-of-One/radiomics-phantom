@@ -1,4 +1,4 @@
-"""rphantom -- synthetic phantoms and an IBSI-compliant radiomics core.
+"""rphantom -- synthetic phantoms and an IBSI-aligned radiomics core.
 
 An open, fully synthetic research kernel for studying the stability of
 radiomics features under acquisition variation.  No patient data, no DICOM, and
@@ -10,7 +10,7 @@ Modules
 ``phantom``
     Deterministic synthetic texture phantoms with known ground truth.
 ``features``
-    IBSI-compliant radiomics feature core (all 11 IBSI families), validated
+    IBSI-aligned radiomics feature core (all 11 IBSI families), benchmarked
     against the IBSI digital phantom.
 ``acquisition``
     Simulated acquisition degradation: blur, noise, resampling, quantisation.

@@ -108,22 +108,35 @@ def figure_atlas() -> None:
     )
     iccs = np.array([r.icc for r in atlas.reliabilities.values()], dtype=float)
     iccs = iccs[np.isfinite(iccs)]
+    # Constant (zero-variance) features are forced to ICC=1.0 by the estimator;
+    # that is a definitional artefact, not measured agreement. Separate them.
+    constant = {t for t, m in atlas.matrices.items() if float(np.var(m)) == 0.0}
+    n_robust = int(np.sum(iccs > 0.9))
 
     fig, ax = plt.subplots(figsize=(6.4, 3.1))
     ax.hist(iccs, bins=np.linspace(-0.4, 1.0, 29), color="#4C78A8", edgecolor="white")
     med = float(np.median(iccs))
     ax.axvline(med, color="#d62728", lw=1.4, ls="--", label=f"median = {med:.2f}")
     ax.axvline(0.9, color="#2ca02c", lw=1.2, ls=":", label="ICC = 0.9 (robust)")
+    ax.text(
+        0.03,
+        0.96,
+        f"{len(iccs)} features\nICC > 0.9: {n_robust} ({len(constant)} constant)",
+        transform=ax.transAxes,
+        va="top",
+        ha="left",
+        fontsize=8,
+    )
     ax.set_xlabel("ICC(2,1) across acquisition conditions")
     ax.set_ylabel("Number of features")
-    ax.legend(frameon=False, fontsize=8)
+    ax.legend(frameon=False, fontsize=8, loc="upper right")
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     fig.savefig(OUT / "fig2_atlas.png", bbox_inches="tight")
     plt.close(fig)
-
+    non_constant = [r for r in atlas.reliabilities.values() if r.tag not in constant]
+    genuine_top = sorted(non_constant, key=lambda r: r.icc, reverse=True)[:5]
     ranked_low = atlas.ranked(by="icc")[:5]
-    ranked_high = atlas.ranked(by="icc", ascending=False)[:5]
     results["atlas"] = {
         "n_features": int(len(atlas.reliabilities)),
         "n_targets": atlas.n_targets,
@@ -132,22 +145,22 @@ def figure_atlas() -> None:
         "icc_median": med,
         "icc_max": float(np.max(iccs)),
         "n_icc_gt_0_9": int(np.sum(iccs > 0.9)),
+        "n_constant_features": len(constant),
+        "constant_features": sorted(constant),
+        "n_genuine_icc_gt_0_9": int(sum(r.icc > 0.9 for r in non_constant)),
         "least_stable": [(r.tag, round(r.icc, 3)) for r in ranked_low],
-        "most_stable": [(r.tag, round(r.icc, 3)) for r in ranked_high],
+        "most_stable_nonconstant": [(r.tag, round(r.icc, 3)) for r in genuine_top],
     }
 
 
 # --------------------------------------------------------------------------
 # Figure 3 — physics-based normalisation of intensity variance
 # --------------------------------------------------------------------------
-def figure_normalisation() -> None:
-    phantom = generate_texture_phantom(size=(28, 28, 28), hu_sd=25.0, lesion=False, seed=0)
-    roi = np.ones(phantom.shape, dtype=bool)
-    sigmas = np.array([0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0])
-    variances = np.array(
+def _variances_at(phantom, roi, sigmas, seed) -> np.ndarray:
+    return np.array(
         [
             extract_features(
-                simulate_acquisition(phantom, noise_sigma=float(s), seed=1).volume,
+                simulate_acquisition(phantom, noise_sigma=float(s), seed=seed).volume,
                 roi,
                 phantom.spacing,
                 include_morphology=False,
@@ -155,15 +168,43 @@ def figure_normalisation() -> None:
             for s in sigmas
         ]
     )
+
+
+def figure_normalisation() -> None:
+    # Proof of concept with an explicit calibration / held-out split and
+    # different noise realisations (seed=1 for calibration, seed=2 for the
+    # held-out evaluation), so the demonstration is not fit and tested on the
+    # same noise pattern.
+    phantom = generate_texture_phantom(size=(28, 28, 28), hu_sd=25.0, lesion=False, seed=0)
+    roi = np.ones(phantom.shape, dtype=bool)
+    sig_cal = np.array([0.0, 5.0, 10.0, 15.0, 20.0])
+    sig_hld = np.array([25.0, 30.0])
+    var_cal = _variances_at(phantom, roi, sig_cal, seed=1)
+    var_hld = _variances_at(phantom, roi, sig_hld, seed=2)
+
     curve = calibrate_response(
-        sigmas, variances, tag="stat_var", descriptor_name="noise_sigma", model="power", power=2.0
+        sig_cal, var_cal, tag="stat_var", descriptor_name="noise_sigma", model="power", power=2.0
     )
-    normalised = np.array(
+    norm_cal = np.array(
+        [normalise_feature(curve, v, s) for v, s in zip(var_cal, sig_cal, strict=True)]
+    )
+    norm_hld = np.array(
+        [normalise_feature(curve, v, s) for v, s in zip(var_hld, sig_hld, strict=True)]
+    )
+
+    # A feature whose response the power-2 model cannot describe -> refused.
+    mean_cal = np.array(
         [
-            normalise_feature(curve, v, s, reference=0.0)
-            for v, s in zip(sigmas * 0 + variances, sigmas, strict=True)
+            extract_features(
+                simulate_acquisition(phantom, noise_sigma=float(s), seed=1).volume,
+                roi,
+                phantom.spacing,
+                include_morphology=False,
+            )["stat_mean"]
+            for s in sig_cal
         ]
     )
+    refused = calibrate_response(sig_cal, mean_cal, tag="stat_mean", model="power", power=2.0)
 
     fig, (axL, axR) = plt.subplots(1, 2, figsize=(6.6, 2.9))
     grid = np.linspace(0, 30, 100)
@@ -172,32 +213,47 @@ def figure_normalisation() -> None:
         curve.model.predict(grid),
         color="#4C78A8",
         lw=1.4,
-        label=f"fit: var$_0$+b·$\\sigma^2$\n(R$^2$={curve.r_squared:.4f})",
+        label=f"calibration fit\n(R$^2$={curve.r_squared:.4f})",
     )
-    axL.scatter(sigmas, variances, color="#d62728", s=18, zorder=3, label="measured")
+    axL.scatter(sig_cal, var_cal, color="#d62728", s=20, zorder=3, label="calibration")
+    axL.scatter(sig_hld, var_hld, color="#8c564b", s=26, marker="^", zorder=3, label="held-out")
     axL.set_xlabel("noise $\\sigma$ (HU-like)")
     axL.set_ylabel("intensity variance")
-    axL.legend(frameon=False, fontsize=7.5)
+    axL.legend(frameon=False, fontsize=7)
     axL.spines[["top", "right"]].set_visible(False)
 
-    axR.scatter(sigmas, variances, color="#d62728", s=18, label="raw")
-    axR.scatter(sigmas, normalised, color="#2ca02c", s=18, marker="s", label="normalised")
-    axR.axhline(variances[0], color="#888", lw=0.8, ls=":")
+    axR.scatter(sig_cal, var_cal, color="#d62728", s=20, label="raw (calibration)")
+    axR.scatter(sig_hld, var_hld, color="#8c564b", s=26, marker="^", label="raw (held-out)")
+    axR.scatter(
+        np.r_[sig_cal, sig_hld],
+        np.r_[norm_cal, norm_hld],
+        color="#2ca02c",
+        s=20,
+        marker="s",
+        label="normalised",
+    )
+    axR.axhline(var_cal[0], color="#888", lw=0.8, ls=":")
     axR.set_xlabel("noise $\\sigma$ (HU-like)")
     axR.set_ylabel("intensity variance")
-    axR.legend(frameon=False, fontsize=7.5)
+    axR.legend(frameon=False, fontsize=7)
     axR.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     fig.savefig(OUT / "fig3_normalisation.png", bbox_inches="tight")
     plt.close(fig)
 
+    all_norm = np.r_[norm_cal, norm_hld]
     results["normalisation"] = {
-        "var0": round(float(variances[0]), 1),
+        "var0": round(float(var_cal[0]), 1),
         "b": round(float(curve.model.b), 4),
         "r_squared": round(float(curve.r_squared), 6),
-        "raw_max": round(float(variances.max()), 1),
-        "normalised_spread": round(float(normalised.max() - normalised.min()), 3),
-        "normalised_mean": round(float(normalised.mean()), 1),
+        "raw_max": round(float(max(var_cal.max(), var_hld.max())), 1),
+        "heldout_sigmas": [float(s) for s in sig_hld],
+        "heldout_raw": [round(float(v), 1) for v in var_hld],
+        "heldout_normalised": [round(float(v), 1) for v in norm_hld],
+        "normalised_spread": round(float(all_norm.max() - all_norm.min()), 3),
+        "refused_feature": "stat_mean",
+        "refused_r_squared": round(float(refused.r_squared), 3),
+        "refused_is_trustworthy": bool(refused.is_trustworthy),
     }
 
 

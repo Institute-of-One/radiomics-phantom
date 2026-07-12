@@ -24,7 +24,8 @@ Determinism
 -----------
 Only noise is stochastic, and it draws from ``numpy.random.default_rng(seed)``;
 every other effect is a deterministic function of its parameters.  The same
-phantom, parameters and seed therefore yield a bit-identical acquisition.  As
+phantom, parameters and seed therefore yield the same acquisition within a fixed
+    software environment.  As
 elsewhere in ``rphantom``, malformed input raises rather than failing silently.
 
 Physical grounding

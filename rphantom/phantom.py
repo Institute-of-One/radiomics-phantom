@@ -19,7 +19,7 @@ Conventions
 
 No patient data, no DICOM, and no external image inputs are involved: every
 voxel is produced from ``numpy.random.default_rng(seed)``, so a given ``seed``
-reproduces a bit-identical volume.
+reproduces the same volume (deterministic within a fixed software environment).
 """
 
 from __future__ import annotations
@@ -356,7 +356,7 @@ def generate_texture_phantom(
         ellipsoid.  Defaults to ``0`` (sharp boundary).
     seed:
         Seed for ``numpy.random.default_rng``.  The same seed and parameters
-        always yield a bit-identical volume.
+        always yield the same volume within a fixed software environment.
 
     Returns
     -------

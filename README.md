@@ -1,6 +1,6 @@
 # radiomics-phantom
 
-**IORN-002 — A Physics-Based Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms**
+**IORN-002 — A Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms, with Proof-of-Concept Physics-Based Normalisation**
 
 ![CI](https://github.com/Institute-of-One/radiomics-phantom/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
@@ -33,7 +33,8 @@ These are enforced, not aspirational:
 - **Own IBSI core.** Features are implemented directly against the IBSI reference definitions,
   with fixed bin-size discretisation. MIRP / PySERA are permitted *only* as development-time
   oracles in CI, never as runtime dependencies.
-- **Deterministic.** Every generator takes a `seed`; the same seed yields a bit-identical volume.
+- **Deterministic.** Every generator takes a `seed`; within a pinned software environment the
+  same seed yields the same volume, and CI checks outputs against predefined tolerances.
 - **No silent failure.** Degenerate input raises a `ValueError` with a message that says what to
   change. NaN is never swallowed.
 - **No patient data.** No DICOM, no scans, nothing derived from a human subject — ever.
@@ -43,7 +44,7 @@ These are enforced, not aspirational:
 | Module | Purpose | State |
 |---|---|---|
 | `rphantom/phantom.py` | Deterministic synthetic texture phantoms | **implemented** |
-| `rphantom/features.py` | IBSI-compliant feature core | **complete** (11 of 11 families) |
+| `rphantom/features.py` | IBSI-aligned feature core | **complete** (11 of 11 families) |
 | `rphantom/acquisition.py` | Simulated acquisition degradation | **implemented** |
 | `rphantom/stability.py` | ICC / CCC stability atlas | **implemented** |
 | `rphantom/normalize.py` | Physics-based normalisation | **implemented** |
@@ -120,7 +121,7 @@ Extract IBSI features from the lesion:
 ```python
 from rphantom import discretise, glcm_features, glszm_features, intensity_statistics
 
-# Fixed bin size is the IBSI default for calibrated (HU) intensities.
+# Fixed bin size is used here as the default for calibrated (HU) intensities; IBSI also defines fixed bin number.
 disc = discretise(phantom.volume, phantom.mask, method="fbs", bin_width=25.0)
 
 intensity_statistics(phantom.volume, phantom.mask).to_dict()  # {'stat_mean': ..., ...}
@@ -160,8 +161,8 @@ disc = discretise(acq.volume, acq.mask, method="fbs", bin_width=25.0)
 glcm_features(disc, "3D_comb").contrast   # rises with noise, falls with blur
 ```
 
-Only noise is stochastic; the same phantom, parameters and seed give a bit-identical
-acquisition. `examples/acquisition_sweep.py` sweeps dose and kernel and tabulates a feature —
+Only noise is stochastic; within a pinned environment the same phantom, parameters and seed give
+the same acquisition. `examples/acquisition_sweep.py` sweeps dose and kernel and tabulates a feature —
 a miniature of the stability atlas to come.
 
 Rate every feature's reproducibility, then undo the drift on one that the physics explains:
@@ -214,11 +215,12 @@ texture, the generator raises.
 
 ## How the features are verified
 
-IBSI publishes a 5×4×4 digital phantom together with reference values for every feature, at a
-tolerance of **zero**: a compliant implementation must reproduce each one exactly, to the three
-significant digits at which they are published. `tests/test_features_ibsi.py` asserts precisely
-that, once per reference value — currently **449 of 482**, being every value for the eight
-families implemented so far.
+IBSI publishes a 5×4×4 digital phantom together with benchmark values for every feature.
+The feature core matches all **482** published digital-phantom benchmark values at the reported
+precision (three significant figures) and within the applicable IBSI tolerances, across all
+eleven IBSI-1 families. `tests/test_features_ibsi.py` asserts this once per benchmark value.
+This validates the tested feature definitions and aggregation settings; it does not by itself
+establish compliance across every IBSI preprocessing configuration.
 
 The phantom and the reference table are not transcribed by hand. `scripts/fetch_ibsi_reference.py`
 downloads them from their authoritative sources and regenerates `tests/ibsi_reference.py`:
@@ -244,19 +246,21 @@ each with a test that says so out loud:
 python -m pytest
 ```
 
-The suite pins the contract rather than the implementation: bit-exact reproducibility across
-seeds, well-formed output, ground truth that echoes the request, an *empirically measured*
-correlation length that recovers the requested one (within 15%) and increases monotonically with
-it, the 449 IBSI reference values, run-length and zone decompositions on volumes solvable by
-hand, and an explicit exception for every malformed input and every mathematically undefined
-feature.
+The suite pins the contract rather than the implementation: reproducibility across seeds within
+a pinned environment, well-formed output, ground truth that echoes the request, an *empirically
+measured* correlation length that recovers the requested one (within 15%) and increases
+monotonically with it, the 482 IBSI benchmark values, run-length and zone decompositions on
+volumes solvable by hand, and an explicit exception for every malformed input and every
+mathematically undefined feature.
 
 ## Preprint
 
 The accompanying manuscript lives in [`paper/`](paper/) as part of the version-controlled
 research package: the canonical Markdown, a compiled PDF with embedded figures, a
-deterministic figure/number generator, and a medRxiv submission kit. Every quoted value is
-reproduced by `paper/make_figures.py`.
+deterministic figure/number generator, machine-readable supplementary tables
+([`paper/supplementary/`](paper/supplementary/): feature inventory and per-feature stability),
+and a medRxiv submission kit. Every quoted value is reproduced by `paper/make_figures.py` and
+`paper/make_supplementary.py`.
 
 ## Citing
 

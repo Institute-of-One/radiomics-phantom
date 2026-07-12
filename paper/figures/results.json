@@ -11,6 +11,12 @@
     "icc_median": 0.024752204519839727,
     "icc_max": 1.0,
     "n_icc_gt_0_9": 3,
+    "n_constant_features": 2,
+    "constant_features": [
+      "ih_min",
+      "ngl_dc_perc_3D"
+    ],
+    "n_genuine_icc_gt_0_9": 1,
     "least_stable": [
       [
         "ih_iqr",
@@ -33,15 +39,7 @@
         -0.031
       ]
     ],
-    "most_stable": [
-      [
-        "ih_min",
-        1.0
-      ],
-      [
-        "ngl_dc_perc_3D",
-        1.0
-      ],
+    "most_stable_nonconstant": [
       [
         "cm_clust_shade_3D_comb",
         0.988
@@ -53,16 +51,38 @@
       [
         "ih_skew",
         0.816
+      ],
+      [
+        "stat_skew",
+        0.794
+      ],
+      [
+        "szm_zs_entr_3D",
+        0.405
       ]
     ]
   },
   "normalisation": {
     "var0": 625.0,
-    "b": 1.0009,
+    "b": 1.0013,
     "r_squared": 1.0,
-    "raw_max": 1525.9,
-    "normalised_spread": 0.229,
-    "normalised_mean": 625.1
+    "raw_max": 1529.2,
+    "heldout_sigmas": [
+      25.0,
+      30.0
+    ],
+    "heldout_raw": [
+      1253.5,
+      1529.2
+    ],
+    "heldout_normalised": [
+      627.6,
+      628.0
+    ],
+    "normalised_spread": 2.979,
+    "refused_feature": "stat_mean",
+    "refused_r_squared": 0.193,
+    "refused_is_trustworthy": false
   },
   "acquisition": {
     "contrast_noise": {

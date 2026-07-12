@@ -1,5 +1,5 @@
 {
-  "title": "radiomics-phantom: A Physics-Based Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms",
+  "title": "radiomics-phantom: A Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms, with Proof-of-Concept Physics-Based Normalisation",
   "description": "<p>An open, fully synthetic research kernel (IORN-002) for mapping the stability of radiomics features under acquisition variation. It provides deterministic digital texture phantoms with known ground truth, a from-scratch feature core reproducing all 482 IBSI-1 digital-phantom reference values, an acquisition simulator, an ICC/CCC feature-stability atlas, and physics-based feature normalisation.</p><p>This is a methodological software contribution using synthetic digital phantoms only: it involves no human subjects, no patient data, no DICOM, and no deep learning, and makes no clinical performance claims. Every volume is generated from a seed and every feature is computed from first principles using numpy/scipy/scikit-image only.</p><p>Code is released under the MIT License; the accompanying prose and figures are released under CC BY 4.0.</p>",
   "upload_type": "software",
   "license": "MIT",

@@ -46,23 +46,26 @@ physically motivated degradations:
 Effects are applied in acquisition order (blur → resample → noise → quantise):
 blur band-limits the signal the grid samples, and noise arises on the
 reconstructed grid, so it is added after resampling. Only noise is stochastic and
-seeded; the same phantom, parameters and seed give a bit-identical acquisition.
+seeded; within a pinned environment the same phantom, parameters and seed give the same acquisition.
 
-## 3. IBSI-compliant feature core
+## 3. IBSI-aligned feature core
 
 All eleven IBSI feature families are implemented from first principles:
 intensity statistics and histogram; the intensity-volume histogram; morphology
 and local intensity; and the six texture families GLCM, GLRLM, GLSZM, GLDZM,
 NGTDM and NGLDM, each over their IBSI aggregations.
 
-**Discretisation** defaults to fixed bin size, the IBSI recommendation for
-calibrated (HU) scales, so a bin keeps the same physical meaning across images.
+**Discretisation** defaults to fixed bin size for calibrated (HU) scales in this
+framework, so a bin keeps the same physical meaning across images; IBSI also
+defines and benchmarks fixed-bin-number configurations.
 
-**Validation is the load-bearing claim.** IBSI publishes a 5×4×4 digital phantom
-and reference values for every feature at a tolerance of *zero* — an
-implementation must reproduce each value exactly to three significant digits.
-`rphantom` reproduces **all 482** published values. Each is asserted once, so a
-regression names the feature that broke.
+**Benchmarking is the load-bearing claim.** IBSI publishes a 5×4×4 digital phantom
+and benchmark values for every feature. `rphantom` matches **all 482** published
+digital-phantom values at the reported precision (three significant figures) and
+within the applicable IBSI tolerances. Each is asserted once, so a regression
+names the feature that broke. This validates the tested feature definitions and
+aggregation settings; it does not by itself establish compliance across every
+IBSI preprocessing configuration.
 
 Some definitions the tiny phantom cannot discriminate are pinned separately and
 documented honestly as such:

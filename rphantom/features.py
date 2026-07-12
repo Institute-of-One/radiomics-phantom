@@ -1,9 +1,9 @@
-"""IBSI-compliant radiomics feature core, implemented from first principles.
+"""IBSI-aligned radiomics feature core, implemented from first principles.
 
 This module implements a subset of the feature families defined by the Image
 Biomarker Standardisation Initiative (IBSI), directly from their mathematical
 definitions, using only ``numpy``.  PyRadiomics is not used.  Every feature is
-validated against the IBSI digital phantom reference values in
+benchmarked against the IBSI digital phantom reference values in
 ``tests/test_features_ibsi.py``.
 
 Implemented families
