@@ -11,8 +11,8 @@ abstract: >-
   digital phantoms only: it involves no human subjects, no patient data, no
   DICOM, and no deep learning, and makes no clinical performance claims.
 type: software
-version: "0.6.0"
-date-released: "2026-07-10"
+version: "0.6.1"
+date-released: "2026-07-13"
 license: MIT
 repository-code: "https://github.com/Institute-of-One/radiomics-phantom"
 authors:
