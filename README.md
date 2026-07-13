@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![IBSI](https://img.shields.io/badge/IBSI--1-482%2F482%20reference%20values-brightgreen)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21309875.svg)](https://doi.org/10.5281/zenodo.21309875)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21309874.svg)](https://doi.org/10.5281/zenodo.21309874)
 
 Radiomics features are notoriously sensitive to how an image was acquired. Separating that
 sensitivity from real biological signal normally requires patient data, which cannot be shared.
@@ -264,8 +264,11 @@ and a medRxiv submission kit. Every quoted value is reproduced by `paper/make_fi
 
 ## Citing
 
-Archived on Zenodo with a DOI that always resolves to the latest version:
-**[10.5281/zenodo.21309875](https://doi.org/10.5281/zenodo.21309875)**. Machine-readable
+Archived on Zenodo. To cite the project as a whole, use the **concept DOI**, which always
+resolves to the latest version:
+**[10.5281/zenodo.21309874](https://doi.org/10.5281/zenodo.21309874)**. To cite a specific
+archived snapshot, use its **version DOI** — for v0.6.0 that is
+[10.5281/zenodo.21309875](https://doi.org/10.5281/zenodo.21309875). Machine-readable
 metadata is in [`CITATION.cff`](CITATION.cff); GitHub's *Cite this repository* button renders
 a ready-made citation from it.
 

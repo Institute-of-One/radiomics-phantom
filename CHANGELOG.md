@@ -10,6 +10,13 @@ deposition.
 
 ## [Unreleased]
 
+### Fixed
+- Zenodo DOI references now distinguish the concept DOI
+  (`10.5281/zenodo.21309874`, always resolves to the latest version) from the
+  version DOI (`10.5281/zenodo.21309875`, the v0.6.0 snapshot). The README badge
+  and citation text and `CITATION.cff` previously labelled the version DOI as the
+  concept DOI.
+
 ## [0.6.1] — 2026-07-13
 
 Preprint package and repository-wide claim moderation; metadata retitled for the
