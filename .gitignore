@@ -45,3 +45,6 @@ outputs/
 
 # Local Claude Code tooling config (not part of the research artefact).
 .claude/
+
+# Private working notes (session hand-off), not part of the research artefact.
+RESUME.md
