@@ -14,7 +14,7 @@ This project sidesteps the problem: every volume is **generated from a seed**, i
 statistics are **known by construction**, and every feature is computed **from first principles**.
 The result is a citable research kernel that anyone can rerun end to end.
 
-> Part of *Institute of One* (IORN-002).
+> Part of *Institute of One* (IORN-002) — the open-research initiative of LISIT Co., Ltd., Tokyo, Japan.
 
 > **Scope.** This is a methodological software contribution using synthetic digital phantoms
 > only. It involves no human subjects, no patient data, and makes no clinical performance

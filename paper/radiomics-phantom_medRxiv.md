@@ -14,7 +14,7 @@ colorlinks: true
 papersize: a4
 ---
 
-**Author affiliation.** Shuji Yamamoto, PhD — Institute of One (supported by Lisit Co., Ltd., Japan; TexelCraft OÜ, Estonia).
+**Author affiliation.** Shuji Yamamoto, PhD — Institute of One, LISIT Co., Ltd., Tokyo, Japan.
 
 **Corresponding author.** Shuji Yamamoto — yamamoto@lisit.jp · ORCID [0000-0001-9211-1071](https://orcid.org/0000-0001-9211-1071).
 
@@ -100,9 +100,9 @@ Synthetic Gaussian-random-field texture is a controlled idealisation, not a subs
 
 **Ethics.** Not applicable. This study involved no human participants, animal subjects, or patient data; only synthetic data were analyzed.
 
-**Competing interests.** S.Y. is the Representative Director of Lisit Co., Ltd. and Chief Executive Officer of TexelCraft OÜ. These entities support Institute of One, an independent research organization. This relationship is disclosed as a potential competing interest. The work used no client or patient data and presents openly licensed research software. The author declares no other competing interests.
+**Competing interests.** S.Y. is the Representative Director (CEO) of LISIT Co., Ltd. and Chief Executive Officer of TexelCraft OÜ. Institute of One is the open-research initiative of LISIT Co., Ltd., which provides institutional oversight and accountability for this work. These commercial relationships are disclosed as potential competing interests. The work used no client or patient data and presents openly licensed research software. The author declares no other competing interests.
 
-**Funding.** This work received no external grant funding. Computing resources and author time were supported in kind by Lisit Co., Ltd. and TexelCraft OÜ.
+**Funding.** This work received no external grant funding. Computing resources and author time were supported in kind by LISIT Co., Ltd. and TexelCraft OÜ.
 
 **Author contributions.** S.Y. is the sole author and is responsible for conceptualization, methodology, software, validation, formal analysis, visualization, and writing. AI tools were used as disclosed in Section 6.
 

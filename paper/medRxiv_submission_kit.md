@@ -22,7 +22,9 @@ A Stability Atlas for IBSI Radiomics Features Using Synthetic Digital Phantoms, 
 Radiomics feature stability atlas on synthetic digital phantoms
 
 ## Authors
-Shuji Yamamoto, PhD — Institute of One (supported by Lisit Co., Ltd., Japan; TexelCraft OÜ, Estonia)
+Shuji Yamamoto, PhD — Institute of One, LISIT Co., Ltd., Tokyo, Japan
+
+(Form fields: Institution = LISIT Co., Ltd. · Department = Institute of One · Institutional URL = https://www.lisit.jp)
 
 - Corresponding author: Shuji Yamamoto
 - Email: yamamoto@lisit.jp
@@ -44,7 +46,7 @@ Radiomics features are strongly sensitive to image acquisition, and separating t
 ## Required declarations (paste into the matching form fields)
 
 **Competing Interest Statement**
-The author conducts commercial imaging-analysis services through Lisit Co., Ltd. (Japan) and TexelCraft OÜ (Estonia), which support Institute of One, an independent research organization. This work used no client or patient data and presents an openly licensed method. The author declares no other competing interests.
+The author is Representative Director (CEO) of LISIT Co., Ltd. (Japan) and Chief Executive Officer of TexelCraft OÜ (Estonia), both of which conduct commercial imaging-analysis services. Institute of One is the open-research initiative of LISIT Co., Ltd., which provides institutional oversight for this work. This work used no client or patient data and presents an openly licensed method. The author declares no other competing interests.
 
 **Funding Statement**
 This work received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
